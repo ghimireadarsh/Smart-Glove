@@ -78,6 +78,6 @@ _______________________________________
 
 ## Authors
 * __[Adarsh Ghimire](ghimireadarsh.github.io)__ - _Initial Work_ - Project Lead
-* __[Aakriti Basnet]((https://www.linkedin.com/in/aakritibasnet/))__ - Project Member 
+* __[Aakriti Basnet](https://www.linkedin.com/in/aakritibasnet/)__ - Project Member 
 * __[Anushma Shrestha](https://np.linkedin.com/in/anushma-shrestha-862449125)__- Project Member
 * __[Bhupendra Kadayat](https://www.linkedin.com/in/bhupendra-kadayat-48b6b3178/)__ - Project Member
