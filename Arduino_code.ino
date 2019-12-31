@@ -1,3 +1,4 @@
+// This code was burned in Arduino mega for this project
 #include <Wire.h>
 #include <SoftwareSerial.h>
 
