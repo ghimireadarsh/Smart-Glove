@@ -33,6 +33,7 @@ pandas==0.25.3
 pandocfilters==1.4.2
 parso==0.5.2
 pexpect==4.7.0
+pickle5==0.0.9
 pickleshare==0.7.5
 prometheus-client==0.7.1
 prompt-toolkit==3.0.2
