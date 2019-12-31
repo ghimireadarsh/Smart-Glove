@@ -1,30 +1,30 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 """
 Created on Fri Jun 22 23:29:25 2018
 
 @author: adarshghimire
 """
-import sys
-sys.executable
-#import numpy as np
+
 import pandas as pd
-#import matplotlib.pyplot as plt
 import serial
 import time
-from os import system
-#from IPython.display import display
-#import seaborn as sns
-train_df=pd.read_csv("./words.csv")
-train_x=train_df.drop(["Word"], axis=1)
-train_y=train_df["Word"]
-print(type(train_x))
-print(type(train_y))
 
+# For machine learning
 from sklearn.ensemble import RandomForestClassifier
-clf_rf=RandomForestClassifier(n_estimators=20, random_state=30)
-print(clf_rf.fit(train_x,train_y))
-print(clf_rf.score(train_x,train_y))
+
+from os import system
+
+# For loading the model developed
+import pickle5 as pickle
+# loading model for all alphabets
+clf_rf = pickle.load(open('models/all_alphabets_model','rb'))
+
+# loading model for all alphabets and yes no
+# Uncomment the below line for loading the model
+# clf_rf = pickle.load(open('models/alphabets_yes_no_model','rb'))
+
+# loading model for all alphabets
+# Uncomment the below line for loading the words model
+# clf_rf = pickle.load(open('models/words_model','rb'))
 
 serial_port = '/dev/tty.usbmodemFA131';
 baud_rate = 9600; #In arduino, Serial.begin(baud_rate)
@@ -34,30 +34,25 @@ def sound_function(predictions):
     system('say %s' %(predictions))
 
 def contloop():
-    output_file = open(write_to_file_path, "w+");
+    output_file = open(write_to_file_path, "w+");   # For saving the predicted value in file for later use
     arduino = serial.Serial(serial_port, baud_rate)
     count=0;
     while count<3:
-        arduino.flush()
-        line=arduino.read(arduino.inWaiting())
-        line=line.decode("utf-8")
+
+        arduino.flush() # clears the arduino buffer memory
+        line=arduino.read(arduino.inWaiting())   # reading inputs from arduino interface
+        line=line.decode("utf-8")    # decooding the inputs from arduino
         #print(line);
-        output_file.write(line);
-        time.sleep(1);
+        output_file.write(line);    # saving the input data
+        time.sleep(1);    # delaying the loop so that system takes input per second
         count+=1;
     output_file.close()
     test_df=pd.read_csv("./test_df.csv")
-    predictions=clf_rf.predict(test_df)
+    predictions=clf_rf.predict(test_df)     # Passing through the model for prediction of the input
     print(predictions)
     sound_function(predictions)
     
 var=1;
 while var ==1:
+    # Make system work, whenever the system is integrated
     contloop()
-    
-
-
-    
-
-    
-    
