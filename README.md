@@ -27,40 +27,53 @@ ____________________________________
 ____________________________________
 #### Some [correlation](https://www.surveysystem.com/correlation.htm) plots of different sensors values for different alphabets
 * Correlation plot of alphabet __A__
+
 ![Correlation plot of alphabet __A__](correlation_images/correlation_plot_alphabet_a.png)
 _______________________________________
 * Correlation plot of alphabet __B__ 
+
 ![Correlation plot of alphabet __B__](correlation_images/correlation_plot_alphabet_b.png)
 _______________________________________
 * Correlation plot of alphabet __C__ 
+
 ![Correlation plot of alphabet __C__](correlation_images/correlation_plot_alphabet_c.png)
 _______________________________________
 * Correlation plot of alphabet __D__
+
 ![Correlation plot of alphabet __D__](correlation_images/correlation_plot_alphabet_d.png)
 _______________________________________
 * Correlation plot of alphabet __E__
+
 ![Correlation plot of alphabet __E__](correlation_images/correlation_plot_alphabet_e.png)
 _______________________________________
 * Correlation plot of alphabet __M__ 
+
 ![Correlation plot of alphabet __M__](correlation_images/correlation_plot_alphabet_m.png)
 _______________________________________
 * Correlation plot of alphabet __N__ 
+
 ![Correlation plot of alphabet __N__](correlation_images/correlation_plot_alphabet_n.png)
 _______________________________________
 * Correlation plot of alphabet __O__ 
+
 ![Correlation plot of alphabet __O__](correlation_images/correlation_plot_alphabet_o.png)
 _______________________________________
 * Correlation plot of alphabet __S__
+
 ![Correlation plot of alphabet __S__](correlation_images/correlation_plot_alphabet_s.png)
 _______________________________________
 * Correlation plot of alphabet __T__
+
 ![Correlation plot of alphabet __T__](correlation_images/correlation_plot_alphabet_t.png)
 _______________________________________
 * Correlation plot of alphabet __U__
+
 ![Correlation plot of alphabet __U__](correlation_images/correlation_plot_alphabet_u.png)
 _______________________________________
 * Correlation plot of alphabet __V__
+
 ![Correlation plot of alphabet __V__](correlation_images/correlation_plot_alphabet_v.png)
+
 _______________________________________
 
 ## Authors
